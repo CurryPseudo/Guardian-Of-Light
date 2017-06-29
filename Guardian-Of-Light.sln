@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian-Of-Light", "Guardian-Of-Light.csproj", "{878E7E0A-EDEA-BAC5-2F1D-3918D79561C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian-Of-Light.Editor", "Guardian-Of-Light.Editor.csproj", "{F83BA49B-8A11-F744-A437-B57C9223A34B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{878E7E0A-EDEA-BAC5-2F1D-3918D79561C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878E7E0A-EDEA-BAC5-2F1D-3918D79561C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878E7E0A-EDEA-BAC5-2F1D-3918D79561C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878E7E0A-EDEA-BAC5-2F1D-3918D79561C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83BA49B-8A11-F744-A437-B57C9223A34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83BA49B-8A11-F744-A437-B57C9223A34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83BA49B-8A11-F744-A437-B57C9223A34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83BA49B-8A11-F744-A437-B57C9223A34B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
