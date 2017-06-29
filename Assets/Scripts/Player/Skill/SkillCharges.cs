@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillCharges {
+public class SkillCharges:MonoBehaviour {
     List<SkillCharge> skillList;
     int activeSkillCount;
    public int ActiveSkillCount
@@ -12,15 +12,7 @@ public class SkillCharges {
             return activeSkillCount;
         }
     }
-    public void update(float time)
-    {
-        refleshVerticalIndex();
-        foreach (SkillCharge skillCharge in skillList)
-        {
-            skillCharge.chargeUpdate(time);
-        }
-    }
-    public SkillCharges()
+    private void Awake()
     {
         skillList = new List<SkillCharge>();
         SkillChargeData skillChargeData = Singleton<Datas>.Instance.SkillChargeData;
@@ -30,16 +22,26 @@ public class SkillCharges {
             if (skill.useType == SkillChargeData.Skill.UseType.normal)
             {
                 skillCharge = new SkillChargeNormal(skill, skillList.Count);
-            } else if (skill.useType == SkillChargeData.Skill.UseType.one_time)
+            }
+            else if (skill.useType == SkillChargeData.Skill.UseType.one_time)
             {
                 skillCharge = new SkillChargeOne_Time(skill, skillList.Count);
-            }else if (skill.useType == SkillChargeData.Skill.UseType.one_timeEachNight)
+            }
+            else if (skill.useType == SkillChargeData.Skill.UseType.one_timeEachNight)
             {
                 skillCharge = new SkillChargeOne_TimeEachNight(skill, skillList.Count);
             }
             addSkillCharge(skillCharge);
         }
         refleshVerticalIndex();
+    }
+    private void Update()
+    {
+        refleshVerticalIndex();
+        foreach (SkillCharge skillCharge in skillList)
+        {
+            skillCharge.chargeUpdate(Time.deltaTime);
+        }
     }
     public void addSkillCharge(SkillCharge skillCharge)
     {

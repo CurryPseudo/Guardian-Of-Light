@@ -20,7 +20,6 @@ public class Datas : Singleton<Datas>
     LittleManData littleManData;
     UpgradeList upgradeList;
     SkillChargeData skillChargeData;
-    SkillCharges skillCharges;
     MonsterData monsterData;
     bool night;
     public Datas()
@@ -35,7 +34,6 @@ public class Datas : Singleton<Datas>
     public void dataReload()
     {
         upgradeList = null;
-        skillCharges = null;
         night = true;
     }
     public bool isNight
@@ -63,14 +61,6 @@ public class Datas : Singleton<Datas>
         {
             if(upgradeList==null) upgradeList = new UpgradeList(skillTable.skillList.Count);
             return upgradeList;
-        }
-    }
-    public SkillCharges SkillCharges
-    {
-        get
-        {
-            if (skillCharges == null) skillCharges = new SkillCharges();
-            return skillCharges;
         }
     }
     public PlayerData PlayerData

@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         playerData = Singleton<Datas>.Instance.PlayerData;
-        skillCharges = Singleton<Datas>.Instance.SkillCharges;
+        skillCharges = GetComponent<SkillCharges>();
         upgradeList = Singleton<Datas>.Instance.UpgradeList;
         skillChargeData = Singleton<Datas>.Instance.SkillChargeData;
         skillTable = Singleton<Datas>.Instance.SkillTable;
@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        skillCharges.update(Time.fixedDeltaTime);
         skillCharges.findSkillCharge("保护之手").ifButtonPushedUseCharge();
         skillCharges.findSkillCharge("怪物感应").ifButtonPushedUseCharge();
         skillCharges.findSkillCharge("召唤圣光").ifButtonPushedUseCharge();

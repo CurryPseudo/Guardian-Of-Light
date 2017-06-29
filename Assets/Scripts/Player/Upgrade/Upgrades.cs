@@ -57,7 +57,7 @@ public class Upgrade
         level++;
         if (allUpdate.isActiveSkill(Name))
         {
-            SkillCharge charge = Singleton<Datas>.Instance.SkillCharges.findSkillCharge(Name);
+            SkillCharge charge = GameObject.Find("Player").GetComponent<SkillCharges>().findSkillCharge(Name);
             charge.fullCharge();
         }
     }

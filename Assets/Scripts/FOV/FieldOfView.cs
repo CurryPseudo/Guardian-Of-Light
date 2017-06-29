@@ -254,17 +254,13 @@ public class FieldOfView : MonoBehaviour {
     {
         return (MeshVertex)nowLightVerteces[index];
     }
-    Vector2 AngleToDir(float angle, bool angleIsGlobal)
+    Vector2 AngleToDir(float angle)
     {
-        if (!angleIsGlobal)
-        {
-            angle += transform.eulerAngles.z;
-        }
         return new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle));
     }
     ViewCastInfo ViewCast(float angle, LayerMask ObstacleLayer)
     {
-        Vector2 dir = AngleToDir(angle, false);
+        Vector2 dir = AngleToDir(angle);
         Vector2 pos = new Vector2(transform.position.x, transform.position.y);
         RaycastHit2D rayCastResult = Physics2D.Raycast(pos, dir, viewRadius, ObstacleLayer);
         if (rayCastResult)

@@ -35,7 +35,7 @@ public class UpgradeList {
             {
                 checkEnableRule[i] = () =>
                 {
-                    return Singleton<Datas>.Instance.SkillCharges.ActiveSkillCount < Singleton<Datas>.Instance.PlayerData.activeSkillMaxCount;
+                    return GameObject.Find("Player").GetComponent<SkillCharges>().ActiveSkillCount < Singleton<Datas>.Instance.PlayerData.activeSkillMaxCount;
                 };
             }
         }
