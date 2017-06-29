@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D85C2304-E0BD-30D1-3BF7-068A74523E16}</ProjectGuid>
+    <ProjectGuid>{61DD21B9-1007-C741-12D8-8C7B5D915D59}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -46,8 +46,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\FieldOfViewEditor.cs" />
-     <None Include="Assets\Shaders\Stencil Mask.shader" />
      <None Include="Assets\Shaders\Stencil Object.shader" />
+     <None Include="Assets\Shaders\Stencil Mask.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -84,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{DA497E72-65FE-FDFA-F133-441DEC17B12C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{116EB9A4-BCC8-B01D-8945-EB108C616C15}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,269 @@
+Mono path[0] = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/Demo/GoL_Data/Managed'
+Mono path[1] = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/Demo/GoL_Data/Mono'
+Mono config path = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/Demo/GoL_Data/Mono/etc'
+PlayerConnection initialized from D:/Project/Unity/GOL/Light Guardian 2D/Build/Demo/GoL_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55464
+Multi-casting "[IP] 10.13.42.35 [Port] 55464 [Flags] 3 [Guid] 493099382 [EditorId] 615846394 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-NA0FKA0) [Debug] 0" to [225.0.0.222:54997]...
+Waiting for connection from host on [0.0.0.0:55464]...
+PlayerConnection accepted from [10.13.42.35] handle:0x358
+Started listening to [0.0.0.0:55464]
+PlayerConnection already initialized - listening to [0.0.0.0:55464]
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970M (ID=0x13d8)
+    Vendor:   NVIDIA
+    VRAM:     3037 MB
+    Driver:   21.20.16.4534
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.028 seconds
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\Demo\GoL_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.743703 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeNormal:set_MaxChargeCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:121)
+SkillChargeNormal:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:160)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:32)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeNormal:set_MaxChargeCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:121)
+SkillChargeNormal:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:160)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:32)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeNormal:set_MaxChargeCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:121)
+SkillChargeNormal:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:160)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:32)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeNormal:set_MaxChargeCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:121)
+SkillChargeNormal:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:160)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:32)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeOne_Time:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:192)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:35)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeOne_Time:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:192)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:35)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeOne_TimeEachNight:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:247)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:38)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:set_ChargeMaxCount(Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:18)
+SkillChargeOne_Time:.ctor(Skill, Int32) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharge.cs:192)
+SkillCharges:.ctor() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\Skill\SkillCharges.cs:35)
+Datas:get_SkillCharges() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Data\Value\Values.cs:70)
+PlayerController:Awake() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\Player\PlayerController.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+SkillChargeAnnulus:.ctor(Int32, Int32, SkillChargeAnnulusController) (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulus.cs:24)
+SkillChargeAnnulusController:setMaxCount() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:34)
+SkillChargeAnnulusController:Start() (at D:\Project\Unity\GOL\Light Guardian 2D\Assets\Scripts\SkillChargeAnnulusController.cs:39)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3404 -> priority: 1 
+  Thread -> id: 320c -> priority: 1 
+Waiting for finish

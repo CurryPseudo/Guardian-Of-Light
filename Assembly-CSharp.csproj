@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DA497E72-65FE-FDFA-F133-441DEC17B12C}</ProjectGuid>
+    <ProjectGuid>{116EB9A4-BCC8-B01D-8945-EB108C616C15}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,10 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Controller.cs" />
+     <Compile Include="Assets\Scripts\Agents\Agent.cs" />
+     <Compile Include="Assets\Scripts\Agents\LittleMan.cs" />
+     <Compile Include="Assets\Scripts\Agents\Monster.cs" />
      <Compile Include="Assets\Scripts\FieldOfView.cs" />
-     <None Include="Assets\Shaders\Stencil Mask.shader" />
+     <Compile Include="Assets\Scripts\GameSystem.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Warn.cs" />
      <None Include="Assets\Shaders\Stencil Object.shader" />
+     <None Include="Assets\Shaders\Stencil Mask.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

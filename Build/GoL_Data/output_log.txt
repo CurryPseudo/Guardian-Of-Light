@@ -1,0 +1,72 @@
+Mono path[0] = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data/Managed'
+Mono path[1] = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data/Mono'
+Mono config path = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data/Mono/etc'
+PlayerConnection initialized from D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55203
+Multi-casting "[IP] 10.13.42.35 [Port] 55203 [Flags] 3 [Guid] 4077669977 [EditorId] 615846394 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-NA0FKA0) [Debug] 0" to [225.0.0.222:54997]...
+Waiting for connection from host on [0.0.0.0:55203]...
+PlayerConnection accepted from [10.13.42.35] handle:0x354
+Started listening to [0.0.0.0:55203]
+PlayerConnection already initialized - listening to [0.0.0.0:55203]
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970M (ID=0x13d8)
+    Vendor:   NVIDIA
+    VRAM:     3037 MB
+    Driver:   21.20.16.4534
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.025 seconds
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Mono path[0] = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data/Managed'
+Mono path[1] = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data/Mono'
+Mono config path = 'D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data/Mono/etc'
+PlayerConnection initialized from D:/Project/Unity/GOL/Light Guardian 2D/Build/GoL_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55067
+Multi-casting "[IP] 10.13.42.35 [Port] 55067 [Flags] 3 [Guid] 2969196674 [EditorId] 615846394 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-NA0FKA0) [Debug] 0" to [225.0.0.222:54997]...
+Waiting for connection from host on [0.0.0.0:55067]...
+PlayerConnection accepted from [10.13.42.35] handle:0x358
+Started listening to [0.0.0.0:55067]
+PlayerConnection already initialized - listening to [0.0.0.0:55067]
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970M (ID=0x13d8)
+    Vendor:   NVIDIA
+    VRAM:     3037 MB
+    Driver:   21.20.16.4534
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.026 seconds
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Project\Unity\GOL\Light Guardian 2D\Build\GoL_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Waiting for finish
+Waiting for finish
