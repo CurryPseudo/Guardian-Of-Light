@@ -105,16 +105,20 @@
     <Compile Include="Assets\Scripts\FSM\FSM.cs" />
     <Compile Include="Assets\Scripts\GameSystem\FovSolve.cs" />
     <Compile Include="Assets\Scripts\GameSystem\GameSystem.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\ObstaclesRandGenerate.cs" />
     <Compile Include="Assets\Scripts\Light\Light.cs" />
     <Compile Include="Assets\Scripts\Light\Rotate.cs" />
     <Compile Include="Assets\Scripts\Mobile\Joystick.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCharacter\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerCharacter\TouchJoyStick.cs" />
     <Compile Include="Assets\Scripts\Player\Skill\SkillCharge.cs" />
     <Compile Include="Assets\Scripts\Player\Skill\SkillCharges.cs" />
     <Compile Include="Assets\Scripts\Player\Upgrade\UpgradeList.cs" />
     <Compile Include="Assets\Scripts\Player\Upgrade\Upgrades.cs" />
     <Compile Include="Assets\Scripts\SkillChargeAnnulus.cs" />
     <Compile Include="Assets\Scripts\SkillChargeAnnulusController.cs" />
+    <Compile Include="Assets\Scripts\Test\TestColliderBound.cs" />
+    <Compile Include="Assets\TestObstacleBorder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\FovMesh.shader" />

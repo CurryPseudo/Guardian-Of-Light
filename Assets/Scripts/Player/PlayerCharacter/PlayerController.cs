@@ -10,8 +10,9 @@ public class PlayerController : MonoBehaviour
     UpgradeList upgradeList;
     SkillTable skillTable;
     GameSystem gameSystem;
-    Joystick joystick;
     CouldChangeCollider couldChangeColliders;
+    Joystick joystick;
+    SpriteRenderer renderer;
     #region MonoBehaviour
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         couldChangeColliders = GetComponent<CouldChangeCollider>();
         fov = GetComponent<FieldOfView>();
         fov.nowMask = 1 << LayerMask.NameToLayer("HighObstacleLayer") | 1 << LayerMask.NameToLayer("ObstacleLayer") | 1 << LayerMask.NameToLayer("Background");
+        renderer = GetComponent<SpriteRenderer>();
         if (lightPrefab == null) lightPrefab = Resources.Load("SceneObjects/LittleLight") as GameObject;
     }
     void Start()
@@ -39,16 +41,16 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        if (joystick.Horizontal != 0 || joystick.Vertical != 0)
+        if(joystick.Horizontal!=0 && joystick.Vertical != 0)
         {
-            velocity = new Vector2(joystick.Horizontal, joystick.Vertical).normalized * moveSpeed;
+            velocity = new Vector2(joystick.Horizontal, joystick.Vertical) * moveSpeed;
+
         }
         else
         {
-            velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * moveSpeed;
+            velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
         }
-
     }
     void FixedUpdate()
     {
@@ -113,8 +115,10 @@ public class PlayerController : MonoBehaviour
         fsm.rule[state][FSM.StateInput.Enter] = (time) =>
         {
             moveSpeed = playerData.leap.MoveSpeed;
-            fov.ObstacleMask = (playerData.leap.LeapHighObstacles ? 0 : 1 << LayerMask.NameToLayer("HighObstacleLayer")) | 1 << LayerMask.NameToLayer("Background");
+            fov.ObstacleMask = (playerData.leap.LeapHighObstacles ? 1 << LayerMask.NameToLayer("Background") : 1 << LayerMask.NameToLayer("HighObstacleLayer")) | 1 << LayerMask.NameToLayer("Background");
+            renderer.sortingOrder = playerData.leap.LeapHighObstacles ? 8 : 6;
             fov.setViewRadiusLeaply(playerData.leap.ViewRadius, playerData.leap.AnimateDelayTime);
+            
             StartCoroutine(DelayChangeCollider());
             StartCoroutine(LinerChangeScale(leapScale * originalScale));
             StartCoroutine(DelayChangeState(FSM.State.Normal, playerData.leap.KeepTime, fsm));
@@ -155,6 +159,7 @@ public class PlayerController : MonoBehaviour
         couldChangeColliders.setCollider(0, true);
         couldChangeColliders.setCollider(1, false);
         fov.ObstacleMask = 1 << LayerMask.NameToLayer("HighObstacleLayer") | 1 << LayerMask.NameToLayer("ObstacleLayer") | 1 << LayerMask.NameToLayer("Background");
+        renderer.sortingOrder = 4;
         fov.setViewRadiusLeaply(playerData.light.ViewRadius, playerData.leap.AnimateDelayTime);
         StartCoroutine(LinerChangeScale(originalScale));
         yield break;

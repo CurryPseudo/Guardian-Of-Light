@@ -46,8 +46,14 @@
 			float _Alpha;
 			fixed4 frag (v2f i) : SV_Target
 			{
+				
+				#if UNITY_UV_STARTS_AT_TOP
+				#else
+				i.uv.y = 1 - i.uv.y;
+				#endif
 				fixed4 col = tex2D(_MainTex, i.uv);
 				float2 dir = i.uv - _LightPos;
+				
 				float dis = min(1, length(float2(dir.x / _Radius.x, dir.y / _Radius.y)));
 				col *= 1 - pow(dis,2);
 				col *= _Alpha;

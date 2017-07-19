@@ -6,7 +6,10 @@ public class MainCameraEffect : MonoBehaviour {
     Material m;
 	// Use this for initialization
 	void Start () {
-		
+        if (ScreenTextureAllocator.fovEnabled == false)
+        {
+            enabled = false;
+        }
 	}
 	
 	// Update is called once per frame
@@ -15,6 +18,7 @@ public class MainCameraEffect : MonoBehaviour {
 	}
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
+       
         if (!m)
         {
             m = new Material(Shader.Find("CameraEffect/Texture Mix"));

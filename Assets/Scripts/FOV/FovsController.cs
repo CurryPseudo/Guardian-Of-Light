@@ -22,8 +22,13 @@ public class FovsController : MonoBehaviour {
 
         cam.orthographicSize = Camera.main.orthographicSize;
         GetComponent<FovsControllerCameraEffect>().controller = this;
-        finalTexture = new RenderTexture(Screen.width, Screen.height, 0, RenderTextureFormat.ARGBFloat, RenderTextureReadWrite.Linear);
+        finalTexture = ScreenTextureAllocator.generateRenderTexture();
         cam.targetTexture = finalTexture;
     }
-    
+    private void Update()
+    {
+        transform.position = Camera.main.transform.position;
+        cam.orthographicSize = Camera.main.orthographicSize;
+    }
+
 }

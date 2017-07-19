@@ -11,7 +11,6 @@ public class FovsControllerCameraEffect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Camera.main.transform.position;
         ScreenTextureAllocator.allocateTexture(ref controller.finalTexture);
         controller.cam.targetTexture = controller.finalTexture;
     }

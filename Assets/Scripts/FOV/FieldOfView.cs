@@ -163,15 +163,23 @@ public class FieldOfView : MonoBehaviour {
     #region MonoBehaviour
     public void Awake()
     {
+        meshResolution = 0.3f;
         if(!GameObject.Find("FovControllerCamera").GetComponent<FovsController>().fovs.Contains(this))
         GameObject.Find("FovControllerCamera").GetComponent<FovsController>().fovs.Add(this);
         gameSystem = GameObject.Find("GameSystem");
-        nowMR = gameObject.AddComponent<FovMeshRenderer>();
-        nowMR.fov = this;
-        nowMR.name = "now";
-        nextMR = gameObject.AddComponent<FovMeshRenderer>();
-        nextMR.fov = this;
-        nextMR.name = "next";
+        if(ScreenTextureAllocator.fovEnabled != false)
+        {
+            nowMR = gameObject.AddComponent<FovMeshRenderer>();
+            nowMR.fov = this;
+            nowMR.name = "now";
+            if (GetComponent<PlayerController>() != null)
+            {
+                nextMR = gameObject.AddComponent<FovMeshRenderer>();
+                nextMR.fov = this;
+                nextMR.name = "next";
+            }
+        }
+        
     }
 
     void Start()
@@ -187,10 +195,16 @@ public class FieldOfView : MonoBehaviour {
     }
     void Update()
     {
-        GetFieldOfView(ref nowMR.mesh, nowMask);
-        GetFieldOfView(ref nextMR.mesh, nextMask);
-        nowMR.alpha = 1- ObstacleMaskChangeDegree;
-        nextMR.alpha = ObstacleMaskChangeDegree;
+        if (ScreenTextureAllocator.fovEnabled != false)
+        {
+            GetFieldOfView(ref nowMR.mesh, nowMask);
+            nowMR.alpha = 1 - ObstacleMaskChangeDegree;
+            if (GetComponent<PlayerController>() != null)
+            {
+                GetFieldOfView(ref nextMR.mesh, nextMask);
+                nextMR.alpha = ObstacleMaskChangeDegree;
+            }
+        }
         count = nowLightVerteces.Count;
         //Test();
     }

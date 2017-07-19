@@ -9,7 +9,7 @@ public class MonsterGroup{
     int nightNumber = 0;
     MonsterInfo nowInfo;
     MonsterData data;
-    float worldSize;
+    Vector2 worldSize;
     public MonsterInfo NowInfo
     {
         get
@@ -56,7 +56,7 @@ public class MonsterGroup{
         {
             
             GameObject monsterGameObject = GameObject.Instantiate(monsterPrefab, GameObject.Find("Monsters").transform);
-            monsterGameObject.transform.Translate(new Vector3((Random.value - 0.5f) * worldSize * 0.8f, (Random.value - 0.5f) * worldSize * 0.8f, 0));
+            monsterGameObject.transform.Translate(new Vector3((Random.value - 0.5f) * worldSize.x * 0.8f, (Random.value - 0.5f) * worldSize.y * 0.8f, 0));
             monsterGameObject.transform.localScale = new Vector3(1, 1, 1);
             Monster monster = monsterGameObject.GetComponent<Monster>();
             monster.group = this;
@@ -82,7 +82,7 @@ public class MonsterGroup{
             }
         }
     }
-	public MonsterGroup(float _maxNightTime,float _worldSize)
+	public MonsterGroup(float _maxNightTime,Vector2 _worldSize)
     {
         maxNightTime = _maxNightTime;
         data = Singleton<Datas>.Instance.MonsterData;

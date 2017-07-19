@@ -91,14 +91,15 @@ public class LittleMan : Agent
     {
         AgentFixedUpdate();
     }
+    /*
     void OnDrawGizmos()
     {
-        /*Gizmos.color = Color.black;
-        Vector3 WanderCenter = RotateVector(WanderDistance * Vector3.right);
+        Gizmos.color = Color.black;
+        Vector3 WanderCenter = RotateVector(wanderDistance * Vector3.right);
         Gizmos.DrawLine(transform.position, transform.position + WanderCenter);
-        Gizmos.DrawWireSphere(transform.position + WanderCenter, WanderRadius);
-        Gizmos.DrawLine(transform.position, transform.position + V2toV3(WanderTarget2D));
-        */
+        Gizmos.DrawWireSphere(transform.position + WanderCenter, wanderRadius);
+        Gizmos.DrawLine(transform.position, transform.position + V2toV3(wanderTarget2D));
+        
     }
     void OnDrawGizmosSelected()
     {
@@ -122,7 +123,7 @@ public class LittleMan : Agent
         }
 
     }
-
+    */
     #endregion
     #region Force
     public Vector2 EscapeFromMonsters()

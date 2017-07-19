@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScreenTextureAllocator{
+    static public float sizeScale = 0.5f;
     static public void allocateTexture(ref RenderTexture texture)
     {
-        if(texture.width != Screen.width || texture.height != Screen.height)
+        if(texture.width != (int)(Screen.width * sizeScale) || texture.height != (int)(Screen.height * sizeScale))
         {
-          texture = new RenderTexture(Screen.width, Screen.height, 0, RenderTextureFormat.ARGBFloat, RenderTextureReadWrite.Linear);
+            RenderTexture.Destroy(texture);
+            texture = generateRenderTexture(); 
         }
     }
+    static public RenderTexture generateRenderTexture()
+    {
+        return new RenderTexture((int)(Screen.width * sizeScale), (int)(Screen.height * sizeScale), 0, RenderTextureFormat.Default, RenderTextureReadWrite.Linear);
+
+    }
+    static public bool fovEnabled = true;
+
 }

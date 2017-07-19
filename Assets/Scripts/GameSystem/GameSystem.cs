@@ -11,23 +11,30 @@ public class GameSystem : MonoBehaviour {
     GameObject player;
     public List<GameObject> monsters = new List<GameObject>();
     public List<GameObject> littleMans = new List<GameObject>();
+    [HideInInspector]
     public GameObject canvas;
+    [HideInInspector]
     public GameObject monsterPrefab;
+    [HideInInspector]
     public GameObject fastMonsterPrefab;
     GameObject background;
+    [HideInInspector]
     public GameObject DeadPanel;
+    [HideInInspector]
     public GameObject DeadButton;
+    [HideInInspector]
     public GameObject Timer;
     //List<GameObject> obstacleList = new List<GameObject>();
-    public int obstacleCount = 6;
     public float nightTime = 120;
+    [HideInInspector]
     public new GameObject camera;
     public float nightFadeTime = 1;
     int tempMonsterCount = 3;
-    float worldSize = 0;
+    Vector2 worldSize = Vector2.zero;
     float timerOriginalScale;
     // Use this for initialization
     public List<Upgrade> upgrades;
+    [HideInInspector]
     public Text debugText;
     Coroutine monsterGroupNightTimeIncreaseNow;
     public void AddMonster(GameObject monster)
@@ -161,59 +168,10 @@ public class GameSystem : MonoBehaviour {
         NightEnd();
         yield break;
     }
-    void GenerateRandObstacles()
-    { 
-        List<GameObject> obstaclePrefabLibrary = new List<GameObject>();
-        int count = 0;
-        GameObject obstaclePrefab = Resources.Load("SceneObjects/Obstacle " + count) as GameObject;
-        while (obstaclePrefab != null)
-        {
-            obstaclePrefabLibrary.Add(obstaclePrefab);
-            obstaclePrefab = Resources.Load("SceneObjects/Obstacle " + ++count) as GameObject;
-        }
-        for (int i = 0; i < obstacleCount; i++)
-        {
-            int randIndex = (int)(Random.value * obstaclePrefabLibrary.Count);
-            obstaclePrefab = obstaclePrefabLibrary[randIndex];
-            Vector3 position;
-            Quaternion rotation;
-            GameObject obstacleInstance = Instantiate<GameObject>(obstaclePrefab, new Vector2(1, 1) * worldSize, new Quaternion());
-            ObstacleInfo info;
-            do
-            {
-                position = new Vector3(Random.value - 0.5f, Random.value - 0.5f, 0) * worldSize;
-                rotation = Quaternion.Euler(0, 0, Random.value * 360);
-                info = new ObstacleInfo(obstacleInstance, position, rotation);
-            } while (IfObstacleNotOverlapedPutItInScene(info));
-        }
-    }
-    bool IfObstacleNotOverlapedPutItInScene(ObstacleInfo info)
-    {
-        info.instance.transform.rotation = info.rotation;
-        Vector2 min = info.position - info.instance.GetComponent<Collider2D>().bounds.extents;
-        Vector2 max = info.position + info.instance.GetComponent<Collider2D>().bounds.extents;
-        Collider2D[] result = Physics2D.OverlapAreaAll(min, max, LayerMask.GetMask("ObstacleLayer", "HighObstacleLayer","Background"));
-        if (result.Length == 0)
-        {
-            info.instance.transform.position = info.position;
-            return false;
-        }
-        return true;
-    }
+  
     // Update is called once per frame
 
-    struct ObstacleInfo
-    {
-        public GameObject instance;
-        public Vector3 position;
-        public Quaternion rotation;
-        public ObstacleInfo(GameObject instance,Vector3 position,Quaternion rotation)
-        {
-            this.instance = instance;
-            this.position = position;
-            this.rotation = rotation;
-        }
-    }
+
     #region MonoBehaviour
     void Awake()
     {
@@ -240,22 +198,25 @@ public class GameSystem : MonoBehaviour {
         if (fastMonsterPrefab == null) fastMonsterPrefab = Resources.Load("SceneObjects/FastMonster") as GameObject;
 
         background = GameObject.Find("Background");
-        worldSize = background.transform.localScale.x;
+        worldSize = background.transform.localScale;
         DeadPanel.SetActive(false);
         timerOriginalScale = Timer.transform.localScale.y;
     }
     void Start()
     {
-        GenerateRandObstacles();
         group = new MonsterGroup(nightTime, worldSize);
         NightBegin();
 
     }
     void Update()
     {
-        debugText.text = string.Format("GroupNowInfo:\n speed{0:G} \n escapeSpeed{1:G} \n attack{2:G} ", group.NowInfo.originalSpeed,group.NowInfo.originalEscapeSpeed,group.NowInfo.originalAttack);
-
-
+        debugText.text = string.Format("GroupNowInfo:\n speed{0:G} \n escapeSpeed{1:G} \n attack{2:G} \n", group.NowInfo.originalSpeed,group.NowInfo.originalEscapeSpeed,group.NowInfo.originalAttack);
+        GameObject joystickBg = null;
+        if (joystickBg = GameObject.Find("JoystickBackground"))
+        {
+            debugText.text += "Joystick worldPosition " + joystickBg.GetComponent<RectTransform>().position.ToString() + "\n";
+            debugText.text += "Joystick localPosition " + joystickBg.GetComponent<RectTransform>().localPosition.ToString() + "\n";
+        }
     }
 
     #endregion
