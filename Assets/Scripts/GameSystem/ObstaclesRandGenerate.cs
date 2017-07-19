@@ -6,6 +6,7 @@ public class ObstaclesRandGenerate : MonoBehaviour {
     //public int obstacleCount = 0;
     public int horizontalObstacleCount = 3;
     public int verticalObstacleCount = 2;
+    public int maxGenerateTimes = 100;
     Transform backGroundTransform;
     // Use this for initialization
     private void Awake()
@@ -44,8 +45,15 @@ public class ObstaclesRandGenerate : MonoBehaviour {
                 GameObject obstacleInstance = Instantiate<GameObject>(obstaclePrefab, backGroundTransform.TransformPoint(1,1,0), new Quaternion());
                 obstacleInstance.transform.SetParent(GameObject.Find("Obstacles").transform, true);
                 ObstacleInfo info;
+                int putTimes = 0;
                 do
                 {
+                    putTimes++;
+                    if (putTimes > maxGenerateTimes)
+                    {
+                        Destroy(obstacleInstance);
+                        break;
+                    }
                     position = backGroundTransform.TransformPoint((Random.value + i) / (float)horizontalObstacleCount - 0.5f, (Random.value + j) / (float)verticalObstacleCount - 0.5f, 0);
                     rotation = Quaternion.Euler(0, 0, Random.value * 360);
                     info = new ObstacleInfo(obstacleInstance, position, rotation);
